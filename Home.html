@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recusive</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="container-fluid px-1 px-md-4 px-lg-1 px-xl-4 py-4 mx-auto ">
+        <div class="card card0 border-0">
+            <div class="row d-flex">
+                <div class="col-lg-8">
+                    <div class="card1 pb-1 border-line">
+                        <svg width="860" height="550" id="drawing-area" style=" margin:5px;">
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div id="title-container">
+                        <img src="image/coriander.jpg" width="100"/>
+                        <p class="title">Recursive Drawing</p>
+                    </div>
+                    <div class="well-sm">
+                        <form>
+                            <div class="form-group row">
+                                <label for="shape" class="col-sm-2 col-form-label">Shape</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control form-control-sm" id="shape">
+                                        <option value="">Please Select ... </option>
+                                        <option value="hilbert">Hilbert</option>
+                                        <option value="Hexagon">Hexagon</option>
+                                        <option value="star">Star</option>
+                                        <option value="star2">Star With Circle</option>
+                                        <option value="beehive">Beehive</option>
+                                        <option value="beehive2">Beehive - 2</option>
+                                        <option value="beehive3">Beehive - 3</option>
+                                        <option value="circle-1">Circle - 1</option>
+                                        <option value="circle-2">Circle - 2</option>
+                                        <option value="circle-3">Circle - 3</option>
+                                        <option value="circle-4">Circle - 4</option>
+                                        <option value="circle-5">Circle - 5</option>
+                                        <option value="circle-6">Circle - 6</option>
+                                        <option value="square-1">Square - 1</option>
+                                        <option value="square-2">Square - 2</option>
+                                        <option value="triangle">Triangle</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row py2">
+                            <label for="depth" class="col-sm-2 col-form-label">Depth</label>
+                            <div class="col-sm-9">
+                                    <select class="form-control form-control-sm" id="depth">
+                                        <option value="0">Please Select ...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                            </div>
+                            </div>
+                            <br>
+                            <button type="button" id="drawing-btn" class="btn btn-primary col-md-4 offset-sm-2">Drawing ... </button>
+                        </form>
+                     </div>
+                </div>
+            </div>
+            <div class="bg-blue py2">
+                <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2 title2">DEVELOPED BY ZIAD HASHEM</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/shapes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/circle.js"></script>
+    <script src="js/Polygonal.js"></script>
+    <script src="js/Hilbert.js"></script>
+    <script src="js/Square.js"></script> 
+    <script src="js/Triangle.js"></script> 
+    <script src="js/Beehive.js"></script>
+    <script src="js/blockUI.js"></script>
+    <script src="js/Hexagon.js"></script>
+    <script src="js/star.js"></script>
+</body>
+</html>
