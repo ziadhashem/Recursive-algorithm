@@ -11,12 +11,12 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    <div class="container-fluid px-1 px-md-4 px-lg-1 px-xl-4 py-4 mx-auto ">
+    <div class="container-fluid container">
         <div class="card card0 border-0">
-            <div class="row d-flex">
+            <div class="row d-flex" >
                 <div class="col-lg-8">
                     <div class="card1 pb-1 border-line">
-                        <svg width="860" height="550" id="drawing-area" style=" margin:5px;">
+                        <svg width="860" id="drawing-area" style=" margin:4px;  height:87vh; ">
 
                         </svg>
                     </div>
@@ -29,8 +29,8 @@
                     <div class="well-sm">
                         <form>
                             <div class="form-group row">
-                                <label for="shape" class="col-sm-2 col-form-label">Shape</label>
-                                <div class="col-sm-9">
+                                <label for="shape" class="col-sm-3 col-form-label">Shape</label>
+                                <div class="col-sm-8">
                                     <select class="form-control form-control-sm" id="shape">
                                         <option value="">Please Select ... </option>
                                         <option value="hilbert">Hilbert</option>
@@ -53,32 +53,34 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="form-group row py2">
-                            <label for="depth" class="col-sm-2 col-form-label">Depth</label>
-                            <div class="col-sm-9">
-                                    <select class="form-control form-control-sm" id="depth">
-                                        <option value="0">Please Select ...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                            </div>
+                            <div class="form-group row">
+                                <label for="depth" class="col-sm-3 col-form-label">Depth</label>
+                                <div class="col-sm-8">
+                                        <select class="form-control form-control-sm" id="depth">
+                                            <option value="0">Please Select ...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                </div>
                             </div>
                             <br>
-                            <button type="button" id="drawing-btn" class="btn btn-primary col-md-4 offset-sm-2">Drawing ... </button>
+                            <div class="form-group">
+                                <button type="button" id="drawing-btn" class="btn btn-primary  col-sm-11">Drawing ... </button>
+                            </div>
                         </form>
                      </div>
                 </div>
             </div>
-            <div class="bg-blue py2">
-                <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2 title2">DEVELOPED BY ZIAD HASHEM</small>
+            <div class="bg-blue px1">
+                <div class="row px-4"> <small class="ml-4 ml-sm-5 mb-2 title2">DEVELOPED BY ZIAD HASHEM</small>
                 </div>
             </div>
         </div>

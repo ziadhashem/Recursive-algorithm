@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
+    margin:0;
+    padding:0;
     background-color: lavender;
-    background-repeat: no-repeat
+    padding: 2%;
+    padding-top: 2%;
+    
+}
+
+.container{
+    height:100%;
+    width:100%;
 }
 
 .title{
@@ -23,17 +29,18 @@ body {
 
 .card0 {
     box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 20px
+    border-radius: 50px 50px 40px 40px;
 }
 
 .card1 {
     box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 0px;
+    border-radius: 50px 0 0 0;
     height:100%
 }
 
 .card2 {
-    margin: 0px 40px
+    margin: 0px 40px;
+    /* border-radius: 50px 0 0 0; */
 }
 
 .logo {
@@ -50,46 +57,6 @@ body {
 
 .border-line {
     border-right: 1px solid #EEEEEE
-}
-
-.facebook {
-    background-color: #3b5998;
-    color: #fff;
-    font-size: 18px;
-    padding-top: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer
-}
-
-.twitter {
-    background-color: #1DA1F2;
-    color: #fff;
-    font-size: 18px;
-    padding-top: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer
-}
-
-.linkedin {
-    background-color: #2867B2;
-    color: #fff;
-    font-size: 18px;
-    padding-top: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer
-}
-
-.line {
-    height: 1px;
-    width: 45%;
-    background-color: #E0E0E0;
-    margin-top: 10px
 }
 
 .or {
@@ -166,7 +133,9 @@ a {
 
 .bg-blue {
     color: #fff;
-    background-color: #1A237E
+    background-color: rgb(114, 114, 248);
+    border-radius: 0 0 50px 50px;
+
 }
 
 @media screen and (max-width: 991px) {
@@ -188,4 +157,47 @@ a {
         margin: 0px 15px
     }
 }
+
+
+
+@media screen and (max-width: 370px) {
+    .title{
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
+    }
+    .title2{
+        font-family: 'Architects Daughter', cursive;
+        font-size: 14px;
+    }
+    #title-container{
+        margin:30px;
+        padding-left: 50px;
+        margin-bottom: 100px;
+     }
+    
+    .card0 {
+        box-shadow: 0px 4px 8px 0px #757575;
+        border-radius: 0px;
+        height:100vh
+    }
+    
+    .card1 {
+        box-shadow: 0px 4px 8px 0px #757575;
+        border-radius: 0px;
+        height:100vh
+    }
+    
+    .card2 {
+        margin: 0px 40px
+    }
+    
+    .logo {
+        width: 200px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 35px
+    }
+    
+}
+
 

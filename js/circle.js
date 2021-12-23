@@ -112,7 +112,6 @@
         if(level>0){
             let color_gold = 'Gold';
             let color_red = 'red';
-     
             DrawingCircle(x,y,r, color_red);
             x1 = x+r/2+r/4;
             y1 = y+r/2+r/4;
