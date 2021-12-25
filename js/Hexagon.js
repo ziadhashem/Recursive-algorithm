@@ -1,4 +1,6 @@
 
+levels= [];
+
 function DrawingHexagon(level,x,y,r,basic_color,basic_stroke) {
    if(level>0){
       let color = 'Gold';
@@ -42,7 +44,24 @@ function DrawingHexagon(level,x,y,r,basic_color,basic_stroke) {
       y7 = y1+r*2;
      
       let points = `${x1} ${y1},${x2} ${y2},${x4} ${y4},${x6} ${y6},${x7} ${y7},${x5} ${y5}`;
-      DrawingPolygon(r, points,basic_color);
-     
+
+      levels[level].push(points); 
+  }
+}
+
+
+function sleep(ms) {
+   return new Promise(resolve => setTimeout(resolve, ms));
+ }
+
+function DrawingHexagonAfterPrepare(depth,x,y,r){
+   for (let index = 1; index <= depth; index++) {
+      levels[index] = [];
+  }
+  DrawingHexagon(depth,x,y,r);
+  for (let level = 1; level < levels.length; level++) {
+      for (let node = 0; node < levels[level].length; node++) {
+         DrawingPolygon(r, levels[level][node],colors[level]);
+      }
   }
 }

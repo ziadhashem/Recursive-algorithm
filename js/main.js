@@ -1,3 +1,14 @@
+colors = [];
+colors[1] = '#ec57ec';
+colors[2] = '#fdff5b';
+colors[3] = '#36ff59';
+colors[4] = '#83fffc';
+colors[5] = '#4284ff';
+colors[6] = '#83fffc';
+colors[7] = '#36ff59';
+colors[8] = '#fdff5b';
+colors[9] = '#ec57ec';
+colors[10] = '#7a0404';
 
 stroke = 'blue';
 color  = 'green';
@@ -17,6 +28,13 @@ msg = '<h1><span class="fa fa-circle-o-notch"></span> Drawing...</h1>';
 pieces = [];
 
 $(`#drawing-btn`).click(function(){
+
+    // var myInterval = setInterval( function(){
+    //     alert("ziad");
+    // }, 2000);
+    // function myStopFunction() {
+    //         clearInterval(myInterval);
+    // }
     
     r = 100; 
     x = 400;
@@ -85,12 +103,13 @@ $(`#drawing-btn`).click(function(){
         $.unblockUI();
     }
     else if(shape == 'Hexagon'){
+        levels = [];
         y= 180;
         if(depth>5){
             r = r*0.9;
         }
         $.blockUI({ message: msg });
-        DrawingHexagon(depth,x,y,r,color = 'Gold');
+        DrawingHexagonAfterPrepare(depth,x,y,r);
         $.unblockUI();
     }
     else if(shape == 'star'){
