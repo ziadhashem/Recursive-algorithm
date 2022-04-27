@@ -1,14 +1,14 @@
 colors = [];
-colors[1] = '#ec57ec';
-colors[2] = '#fdff5b';
-colors[3] = '#36ff59';
-colors[4] = '#83fffc';
-colors[5] = '#4284ff';
-colors[6] = '#83fffc';
-colors[7] = '#36ff59';
-colors[8] = '#fdff5b';
-colors[9] = '#ec57ec';
-colors[10] = '#7a0404';
+colors[1] = 'red';
+colors[2] = 'blue';
+colors[3] = 'yellow';
+colors[4] = 'green';
+colors[5] = 'red';
+colors[6] = 'green';
+colors[7] = 'red';
+colors[8] = 'yellow';
+colors[9] = 'blue';
+colors[10] = 'red';
 
 stroke = 'blue';
 color  = 'green';

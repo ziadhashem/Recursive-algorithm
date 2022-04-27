@@ -5,11 +5,11 @@ function DrawingHexagon(level,x,y,r,basic_color,basic_stroke) {
    if(level>0){
       let color = 'Gold';
       if(level == 5 || level == 10)
-         color = 'Orange';
+         color = 'red';
       if(level == 4 || level == 9)
          color = 'yellow';
       if(level == 3 || level == 8)
-         color = 'Orange';
+         color = 'red';
       if(level == 2 || level == 7)
          color = 'Gold';
       if(level == 1 || level == 6)
